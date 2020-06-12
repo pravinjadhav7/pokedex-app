@@ -1,0 +1,224 @@
+body {
+  margin: 0;
+  font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #676a6c;
+  overflow-x: hidden;
+  font-weight: bolder;
+}
+
+.App {
+  text-align: center;
+}
+
+
+button:focus {
+  outline: none;
+}
+
+.add-pokemon {
+  text-align: initial;
+  padding-left: 15px;
+}
+
+.pokemon-list-item {
+  flex-grow: 1;
+  margin: 1em;
+  padding: .25em;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 100px rgba(0, 0, 0, 0.2), 0 100px 100px rgba(0, 0, 0, 0.03);
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.pokemon-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pokemon-list-item:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.content{
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-left: 70px;
+  margin-bottom: 20px;
+  width: 150px;
+}
+
+.btn-sm {
+  font-size: .8rem;
+}
+
+.btn-primary {
+  color: #fff !important;
+  background-color: #1ab394 !important;
+  border-color: #1ab394 !important;
+}
+
+.btn-sm {
+  padding: .25rem .5rem;
+  font-size: .875rem;
+  line-height: 1.5;
+  border-radius: .2rem;
+  margin-top: 20px;
+  margin-left: 70px;
+  margin-bottom: 20px;
+}
+
+
+.modal-container {
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-close {
+  margin-left: 0;
+}
+
+.image-pokemon {
+  display: flex;
+  justify-content: start;
+}
+
+
+.form-main{
+  margin-top: 30px;
+}
+
+
+
+
+.container {
+  margin: 0 auto;
+}
+
+.container * {
+  box-sizing: border-box;
+}
+
+form{
+  padding-top: 20px;
+  width: 80%;
+  max-width: 1200px;
+  margin: auto;
+  box-shadow: 0 10px 100px rgba(0, 0, 0, 0.2), 0 100px 100px rgba(0, 0, 0, 0.03);
+}
+
+.flex-outer,
+.flex-inner {
+  list-style-type: none;
+  padding: 0;
+}
+
+.flex-outer {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.flex-outer li,
+.flex-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.flex-inner {
+  padding: 0 8px;
+  justify-content: flex-start;
+}
+
+.flex-outer>li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.flex-outer li label,
+.flex-outer li p {
+  padding: 8px;
+  font-weight: 300;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+
+.flex-outer>li>label,
+.flex-outer li p {
+  flex: 1 0 120px;
+  max-width: 220px;
+}
+
+.flex-outer>li>label+*,
+.flex-inner {
+  flex: 1 0 220px;
+}
+
+.flex-inner li {
+  margin: 1em;
+}
+
+.flex-outer li p {
+  margin: 0;
+}
+
+.flex-outer li input:not([type='checkbox']),
+.flex-outer li textarea {
+  padding: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+input:focus{
+  outline: none;
+}
+
+.flex-outer li button,
+.flex-outer p {
+  margin-left: auto;
+  padding: 8px 16px;
+  border: none;
+  background: #333;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  border-radius: 2px;
+}
+
+.flex-inner li {
+  width: 100px;
+}
+
+.back-link {
+  text-decoration: none;
+  background: darkslategrey;
+  max-width: 100px;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  font-size: 1.5rem;
+}
